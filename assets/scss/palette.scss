@@ -1,0 +1,28 @@
+// Adding my personal colors : 
+$cream: #f3e5ab; /*Background*/
+$light-gray: #c4c4c4; /*Game Boy color*/
+$strong-gray: #747070; /*Game Boy screen border color*/
+$light-green: #A4C639; /*Game Boy screen color*/ 
+$dark-bordeau: #9C2A2A; /*Game Boy red buttons color*/ 
+ 
+// Creation of my colors palette : 
+$custum-theme-colors: (
+    "cream": $cream,
+    "light-gray": $light-gray,
+    "light-green": $light-green,
+    "strong-gray": $strong-gray,
+    "dark-bordeau": $dark-bordeau,
+);
+
+// Link between my colors palette and Bootstrap theme-colors :
+$theme-colors: map-merge($custum-theme-colors, $theme-colors);
+
+// Against bugs on bg & text :
+@each $key, $val in $custum-theme-colors{
+    .bg-#{$key} {
+        background-color: $val !important;
+    }
+    .text-#{$key} {
+        color: $val !important;
+    } 
+}
