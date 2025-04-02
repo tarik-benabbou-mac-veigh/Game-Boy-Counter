@@ -1,8 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
 
+@import './palette.scss';
+
 *{
     font-family: "Press Start 2P", serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #f3e5ab;
+    // background-color: #f3e5ab;
+}
+
+// GameBoy shape : 
+.gameBoyShape{
+    border: none;
+    border-radius: 1rem;
+    border-bottom-right-radius: 6rem;
+}
+
+// Border-screen :
+.borderScreen{
+    border: none;
+    border-radius: 1rem;
+    border-bottom-right-radius: 2rem;
+    height: 19rem;
+}
+
+// Screen :
+.screen{
+    border: none;
+    height: 16rem;
+}
+
+// Input increase/decrease & high/low limits : 
+.dataInput{
+    background-color: $light-green;
+    border: none;
+    color: white;
+}
+
+// Nintendo Brand : 
+.nintendoBrand{
+    color: rgb(16, 16, 137);
+}
+
+// Buttons :
+.sectionButtons{
+    border: none;
+    border-radius: 1rem;
+    border-bottom-right-radius: 2rem;
+    height: 14rem;
 }

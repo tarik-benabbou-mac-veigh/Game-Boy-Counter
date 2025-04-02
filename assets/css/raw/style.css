@@ -1,10 +1,89 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap");
+/*Background*/
+/*Game Boy color*/
+/*Game Boy screen border color*/
+/*Game Boy screen color*/
+/*Game Boy red buttons color*/
+.bg-cream {
+  background-color: #f3e5ab !important;
+}
+
+.text-cream {
+  color: #f3e5ab !important;
+}
+
+.bg-light-gray {
+  background-color: #c4c4c4 !important;
+}
+
+.text-light-gray {
+  color: #c4c4c4 !important;
+}
+
+.bg-light-green {
+  background-color: #A4C639 !important;
+}
+
+.text-light-green {
+  color: #A4C639 !important;
+}
+
+.bg-strong-gray {
+  background-color: #747070 !important;
+}
+
+.text-strong-gray {
+  color: #747070 !important;
+}
+
+.bg-dark-bordeau {
+  background-color: #9C2A2A !important;
+}
+
+.text-dark-bordeau {
+  color: #9C2A2A !important;
+}
+
 * {
   font-family: "Press Start 2P", serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #f3e5ab;
+}
+
+.gameBoyShape {
+  border: none;
+  border-radius: 1rem;
+  border-bottom-right-radius: 6rem;
+}
+
+.borderScreen {
+  border: none;
+  border-radius: 1rem;
+  border-bottom-right-radius: 2rem;
+  height: 19rem;
+}
+
+.screen {
+  border: none;
+  height: 16rem;
+}
+
+.dataInput {
+  background-color: #A4C639;
+  border: none;
+  color: white;
+}
+
+.nintendoBrand {
+  color: rgb(16, 16, 137);
+}
+
+.sectionButtons {
+  border: none;
+  border-radius: 1rem;
+  border-bottom-right-radius: 2rem;
+  height: 14rem;
 }
 
 /*Background*/
