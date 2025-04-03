@@ -26,15 +26,15 @@
                             <div class="row flex-column align-items-center justify-content-center py-3">
                                 <!-- Inputs limits -->
                                  <div class="d-flex justify-content-bewteen mb-5">
-                                    <input class="col-3 dataInput" type="number" value="-50">
-                                    <input class="col-3 dataInput ms-auto pe-0" style="width: 50px;" type="number" value="50">
+                                    <input id="lowLimit" class="col-3 dataInput" style="width: 100px;" type="number" value="-50">
+                                    <input id="highLimit" class="col-3 dataInput ms-auto text-end pe-0" style="width: 100px;" type="number" value="50">
                                 </div>
                                 <!-- Counter -->
                                 <h3 class="mb-3 mt-3 fs-1">0</h3>
                                 <!-- Inputs speed -->
                                 <div class="row fs-6 mt-5">
-                                    <input class="col-3 dataInput" type="number" value="2">
-                                    <input id="inputInc" class="col-3 dataInput ms-auto pe-0" style="width: 50px;" type="number" value="2">
+                                    <input id="inputDec" class="col-3 dataInput" style="width: 100px;" type="number" value="2">
+                                    <input id="inputInc" class="col-3 dataInput ms-auto text-end pe-0" style="width: 100px;" type="number" value="2">
                                 </div>
                             </div>
                         </div>
@@ -47,23 +47,30 @@
                     <div class="d-flex flex-column">
                         <!-- Upper part -->
                         <div class="d-flex">
-                            <!-- Directional cross -->
+                            <!-- Directional cross (A,B,C,D) -->
                             <div class="col-4 d-grid cursor-pointer" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);">
                                 <!-- Line 1 -->
                                 <div></div>
-                                <div class="bg-dark rounded-top text-center text-light">I</div>
-                                <div class="p-3"></div>
-                                
+                                <label for="inputInc" class="bg-dark rounded-top text-light d-flex justify-content-center align-items-center">A</label>
+                                <div class="p-3"></div>       
                                 <!-- Line 2 -->
-                                <div class="bg-dark rounded-start text-center text-light">-</div>
+                                <label for="lowLimit" class="bg-dark rounded-start text-light d-flex justify-content-center align-items-center">D</label>
                                 <div class="bg-dark"></div>
-                                <div class="bg-dark rounded-end text-center text-light">+</div>
-                                
+                                <label for="highLimit" class="bg-dark rounded-end text-light d-flex justify-content-center align-items-center">B</label>
                                 <!-- Line 3 -->
                                 <div></div>
-                                <label for="inputInc" class="bg-dark rounded-bottom text-center text-light">D</label>
+                                <label for="inputDec" class="bg-dark rounded-bottom text-light d-flex justify-content-center align-items-center">C</label>
                                 <div></div>
-                             </div>
+                            </div>
+                            <!-- Buttons (+,-) -->
+                            <div class="col-3 d-grid cursor-pointer ms-auto" style="grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);">
+                                <!-- Line 1 -->
+                                 <div></div>
+                                 <button class="rounded-circle bg-dark-bordeau fw-bold text-light d-flex justify-content-center align-items-center btn border-none">+</button>
+                                 <!-- Line 2 -->
+                                 <button class="rounded-circle bg-dark-bordeau fw-bold text-light d-flex justify-content-center align-items-center btn border-none">-</button>
+                                <div></div>
+                            </div>
                         </div>
                         <!-- Lower part -->
                         <div class="d-flex justify-content-center">
