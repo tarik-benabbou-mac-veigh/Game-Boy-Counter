@@ -42,7 +42,6 @@ function decrementation(){
     if(clickNumber > highNumber){
         clickNumber = highNumber;
     }
-    
     counter.textContent = clickNumber;
 }
 
