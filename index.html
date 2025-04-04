@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,13 @@
     
     <main class="row justify-content-center">
         <!-- Game Boy part -->
-        <section class="gameBoyShape col-xl-3 col-lg-4 col-md-5 bg-light-gray border border-secondary">
+        <section class="gameBoyShape col-xl-3 col-lg-4 col-md-5 bg-light-gray ">
             <div class="row justify-content-center">
                 <!-- Border screen part -->
-                <div class="borderScreen col-11 m-3 bg-strong-gray border border-secondary">
+                <div class="borderScreen col-11 my-4 bg-strong-gray">
                     <div class="row justify-content-center">
                         <!-- Screen part -->
-                        <div class="screen col-10 my-4 mx-5 bg-light-green border border-secondary">
+                        <div class="screen col-10 my-4 mx-5 bg-light-green">
                             <!-- Figures part -->
                             <div class="row flex-column align-items-center justify-content-center py-3">
                                 <!-- Inputs limits -->
@@ -30,7 +30,7 @@
                                     <input id="highLimit" class="col-3 dataInput ms-auto text-end pe-0" style="width: 100px;" type="number" value="50">
                                 </div>
                                 <!-- Counter -->
-                                <h3 class="mb-3 mt-3 fs-1">0</h3>
+                                <h3 id="counter" class="mb-3 mt-3 fs-1">0</h3>
                                 <!-- Inputs speed -->
                                 <div class="row fs-6 mt-5">
                                     <input id="inputDec" class="col-3 dataInput" style="width: 100px;" type="number" value="2">
@@ -41,12 +41,12 @@
                     </div>
                 </div>
                 <!-- Nintendo brand -->
-                <h3 class="fs-5 nintendoBrand">GAME BOY</h3>
+                <h3 class="fs-5 nintendoBrand mb-3">GAME BOY</h3>
                 <!-- Buttons -->
-                <div class="sectionButtons col-11 my-4 border border-secondary">
-                    <div class="d-flex flex-column">
+                <div class="sectionButtons col-10 my-4 justify-content-bewteen">
+                    <div class="d-flex flex-column gap-5">
                         <!-- Upper part -->
-                        <div class="d-flex">
+                        <div class="d-flex mb-3">
                             <!-- Directional cross (A,B,C,D) -->
                             <div class="col-4 d-grid cursor-pointer" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);">
                                 <!-- Line 1 -->
@@ -66,16 +66,15 @@
                             <div class="col-3 d-grid cursor-pointer ms-auto" style="grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);">
                                 <!-- Line 1 -->
                                  <div></div>
-                                 <button class="rounded-circle bg-dark-bordeau fw-bold text-light d-flex justify-content-center align-items-center btn border-none">+</button>
+                                 <button id="plusButton" class="rounded-circle bg-dark-bordeau fw-bold text-light d-flex justify-content-center align-items-center btn border-none">+</button>
                                  <!-- Line 2 -->
-                                 <button class="rounded-circle bg-dark-bordeau fw-bold text-light d-flex justify-content-center align-items-center btn border-none">-</button>
+                                 <button id="minusButton" class="rounded-circle bg-dark-bordeau fw-bold text-light d-flex justify-content-center align-items-center btn border-none">-</button>
                                 <div></div>
                             </div>
                         </div>
                         <!-- Lower part -->
-                        <div class="d-flex justify-content-center">
-                            <!-- <button>Reset</button>
-                            <button>Reset</button> -->
+                        <div class="d-flex justify-content-center align-items-end">
+                            <button id="resetButton" class="rounded btn border-none bg-strong-gray text-light">Reset</button>
                         </div>
                     </div>
                 </div>
@@ -87,5 +86,6 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
