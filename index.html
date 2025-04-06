@@ -11,6 +11,38 @@
     <header class="row justify-content-center">
         <h1 class="col-8 text-center">Game Boy</h1>
         <h2 class="col-8 text-center">counter</h2>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <!-- How to play button -->
+                <button class="btn bg-dark-bordeau text-light border border-none mb-3 rounded" data-bs-toggle="modal" data-bs-target="#directions">How to play ?</button>
+                <!-- Modal for directions -->
+                <div class="modal fade" id="directions" tabindex="-1" aria-labelledby="directionsHowToPlay" aria-hidden="true">
+                    <div class="modal-dialog-centered modal-dialog">
+                    <div class="modal-content bg-light-gray">
+                        <div class="modal-header">
+                        <h4 class="modal-title" id="directionsHowToPlay">How to play ?</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-light-green text-start">
+                            <h5 class="bg-dark text-light d-inline-block p-2 rounded">Buttons</h5>
+                            <ul>
+                                <li>A : Incrementation speed</li>
+                                <li>B : High limit</li>
+                                <li>C : Decrementation speed</li>
+                                <li>D : Low limit</li>
+                                <li>+ : Add a value</li>
+                                <li>- : Deduct a value</li>
+                                <li>Reset : value = 0</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn bg-strong-gray text-light-green" data-bs-dismiss="modal">-- Let's play --</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     
     <main class="row justify-content-center">
@@ -79,7 +111,7 @@
                     </div>
                 </div>
             </div>
-        </section>    
+        </section>
     </main>
 
     <footer>
