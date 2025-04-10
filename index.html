@@ -114,9 +114,41 @@
             </div>
         </section>
     </main>
-
     <footer>
-
+        <!-- Credits button -->
+        <button class="btn bg-dark-bordeau text-light border border-none mt-2 rounded" data-bs-toggle="modal" data-bs-target="#credits">Credits</button>
+        <!-- Modal for credits -->
+        <div class="modal fade" id="credits" tabindex="-1" aria-labelledby="creditsinfo" aria-hidden="true">
+            <div class="modal-dialog-centered modal-dialog">
+            <div class="modal-content bg-light-gray">
+                <div class="modal-header">
+                <h4 class="modal-title" id="creditsinfo">Credits information</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light-green text-start">
+                    <h5 class="bg-dark text-light d-inline-block p-2 rounded">Creator</h5>
+                    <h4 class="fs-6 fw-bold">Tarik Benabbou Mac Veigh</h4>
+                    <ul>
+                        <li>Junior web developer</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Willing to evolve</li>
+                    </ul>
+                    <a class="btn bg-dark-bordeau text-light border border-none mt-5 rounded" href="https://github.com/tarik-benabbou-mac-veigh" target="_blank">GitHub</a>
+                    <a class="btn bg-dark-bordeau text-light border border-none mt-5 rounded" href="https://www.linkedin.com/in/tarik-b-mac-veigh-a8b186100/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="modal-body bg-cream text-start">
+                    <h5 class="bg-dark text-light d-inline-block p-2 rounded">Mentor</h5>
+                    <h4 class="fs-6 fw-bold">Jérémy Mouzin</h4>
+                    <p>Many thanks for all your professionnal and clear explanations during on all your videos from your training program.</p>
+                    <a class="btn bg-dark-bordeau text-light border border-none mt-5 rounded" href="https://www.javascriptdezero.com/" target="_blank">Website</a>
+                    <a class="btn bg-dark-bordeau text-light border border-none mt-5 rounded" href="https://www.youtube.com/c/JavaScriptdeZ%C3%A9ro" target="_blank">Chanel</a>                    
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn bg-strong-gray text-light-green" data-bs-dismiss="modal">-- Close --</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
